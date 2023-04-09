@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>window.$ = window.jQuery = require('./js/jquery-3.6.3.min.js') </script>
+    <script src="./js/jquery.webcam.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI识别</title>
+<link type="text/css" href="css/base1.css" rel="stylesheet"  media="screen"/>
+<link type="text/css" href="css/new_3.css" rel="stylesheet"  media="screen"/>
+
+</head>
+<body style="overflow:hidden">
+<!--代码部分begin-->
+
+<div class="loading"></div>
+<div class="contentbox">
+    <div class="cbox1" id="close_">
+        <div class="close"></div>
+    </div>
+    <div class="cbox2" id="min_">
+        <div class="minWind"></div>
+    </div>
+<div class="selectimg" id="selectimg">
+    <input type="file" accept="image/*" id="getImage"/>
+    <input type="button" value="上传" id="uploadimg" style="width: 50px;"/>
+    <div id="selectpic" style="top:20px"></div>
+</div>
+<div class="getimg" id="getimg" style="left: 300px;">
+    <div id="show"></div>
+</div>
+</div>
+<img src="img/back.png" class="icoback"\>
+<canvas class= "canv" id="projector"  width="300px" height="300px">Your browser does not support the Canvas element.</canvas><canvas id="projector"  width="100%" height="100%">Your browser does not support the Canvas element.</canvas>
+<script src="js/base1.js"></script>
+<script type="text/javascript" src="js/Render.js"></script>
+<script type="text/javascript" src="js/window_3.js"></script>
+
+<!--代码部分end-->
+</body>
+</html>

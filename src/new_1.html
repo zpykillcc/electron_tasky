@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>window.$ = window.jQuery = require('./js/jquery-3.6.3.min.js') </script>
+    <script src="./js/jquery.webcam.js"></script>
+    <script type="text/javascript" src="../node_modules/animejs/lib/anime.js"></script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI识别</title>
+<link type="text/css" href="css/base1.css" rel="stylesheet"  media="screen"/>
+<link type="text/css" href="css/new_1.css" rel="stylesheet"  media="screen"/>
+</head>
+<body style="overflow:hidden">
+<!--代码部分begin-->
+<div class="loading"></div>
+<div class="contentbox">
+    <ul class="Icon-Box"> 
+        <li><img src="img/default_avator.jpg" class="avator" id="avator"/><img src="img/default_avator.jpg" class="disp"/></li>
+        <li id="set"><img src="img/Set.png" class="avator"/></li>
+    </ul>
+    <div class="cbox1" id="close_">
+        <div class="close"></div>
+    </div>
+    <div class="cbox2" id="min_">
+        <div class="minWind"></div>
+    </div>
+    <div class="weltext"></div>
+    <div class="qcontainer" id="updatepic">
+        <div class="film">
+            <div class="face front"><img src="img/sd1.png"></div>
+            <div class="face back"><h3>上传图片</h3></div>
+        </div>
+    </div>
+    <div class="qcontainer" id="updatevideo">
+        <div class="film">
+            <div class="face front"><img src="img/sd2.png"></div>
+            <div class="face back"><h3>摄像头读取</h3></div>
+        </div>
+    </div>
+    <img src="img/back.png" class="icoback"\>\
+</div>
+<canvas class= "canv" id="projector"  width="300px" height="300px">Your browser does not support the Canvas element.</canvas><canvas id="projector"  width="100%" height="100%">Your browser does not support the Canvas element.</canvas>
+
+<div id="racePop" class="raceShow">
+    <div class="div" style="width: 100px; height: 100px; overflow-y: auto;">
+            <div class="close" id="aClose" style="cursor: pointer;"></div>
+    </div>
+        <div style="position: absolute; left: 10px; top: 20px;">模型选择
+        <select id="model" style="position: relative; left: 10px;  width:60px;">
+        </select>
+        </div>
+        <div style="position: absolute; left: 10px; top: 60px;">Lora选择
+            <select id="lora" style="position: relative; left: 10px;  width:60px;">
+                <option value="">无</option>
+                <option value="lora:yaeMikoRealistic_yaemikoMixed:1">yaeMikoRealistic_yaemikoMixed</option>
+                <option value="lora:yorBriarSpyFamily_lykonV1:1">yorBriarSpyFamily_lykonV1</option>
+                <option value="lora:luxannaCrownguardFrom_luxV1:1">luxannaCrownguardFrom_luxV1</option>
+                <option value="jinxLeagueOfLegends_v10:1">jinxLeagueOfLegends_v10</option>
+            </select>
+        </div>
+
+        <input type="file" accept="image/*" id="getpic"/>
+        <input type="button" value="上传" id="upload" style="width: 50px;"/>
+        <div id="selectpic" style="top:20px"></div>
+
+</div>
+
+<div class="imgWrapper">
+    <div class="wrapper"></div>
+    <input type="button" value="使用" id="setAvator" style="width: 50px; position: relative; top: 555px; right: 250px; -webkit-app-region: no-drag;"/>
+    <input type="button" value="关闭" id="closeAvator" style="width: 50px; position: relative; top: 555px;right: 200px; -webkit-app-region: no-drag;"/>
+</div>
+</div>
+
+
+<script src="js/base1.js"></script>
+<script type="text/javascript" src="js/showPic.js"></script>
+<script type="text/javascript" src="js/Render.js"></script>
+<script type="text/javascript" src="js/window_1.js"></script>
+
+
+
+
+
+<!--代码部分end-->
+</body>
+</html>

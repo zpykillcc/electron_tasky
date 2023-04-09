@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>window.$ = window.jQuery = require('./js/jquery-3.6.3.min.js') </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI识别</title>
+<link type="text/css" href="css/base1.css" rel="stylesheet"  media="screen"/>
+
+</head>
+<body style="overflow:hidden">
+<!--代码部分begin-->
+<div class="contentbox">
+    <ul class="Icon-Box"> 
+        <li><img src="img/default_avator.jpg" class="avator" id="avator"/><img src="img/default_avator.jpg" class="disp"/></li>
+        <li id="set"><img src="img/Set.png" class="avator"/></li>
+    </ul>
+    <div class="cbox1" id="close_">
+        <div class="close"></div>
+    </div>
+    <div class="cbox2" id="min_">
+        <div class="minWind"></div>
+    </div>
+    <div class="weltext"></div>
+    <div class="qcontainer" id="upfacevideo">
+        <div class="film">
+            <div class="face front"><img src="img/SD.PNG"></div>
+            <div class="face back"><h3>调取摄像头</h3></div>
+        </div>
+    </div>
+    <img src="img/back.png" class="icoback"\>\
+</div>
+<canvas class= "canv" id="projector"  width="300px" height="300px">Your browser does not support the Canvas element.</canvas><canvas id="projector"  width="100%" height="100%">Your browser does not support the Canvas element.</canvas>
+<script src="js/base1.js"></script>
+<script type="text/javascript" src="js/Render.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#upfacevideo").click(function(){
+            if (confirm("是否调用摄像头")){
+                ipcRenderer.send('get_FaceImg')
+            } 
+        });
+    });
+</script>
+
+
+
+
+<!--代码部分end-->
+</body>
+</html>

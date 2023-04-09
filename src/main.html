@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>window.$ = window.jQuery = require('./js/jquery-3.6.3.min.js') </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI识别</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ <!--<script src="js/jquery-3.6.3.min.js"></script>-->
+</head>
+<body>
+    <div class="alert"></div>
+    <div class="loading"></div>
+    <div class="container">
+        <div class="cbox1" id="close_">
+            <div class="close"></div>
+        </div>
+        <div class="cbox2" id="min_">
+            <div class="minWind"></div>
+        </div>
+        <div class="login-wrapper">
+            <div class="header">AI识别</div>
+            <div class="form-wrapper">
+                    <input type="text" name="username" id="username" placeholder="username" class="input-item" required>
+                    <input type="password" name="password" id="password" placeholder="password" class="input-item" required>
+                <div class="btn" id="passBtn">
+                    登陆
+                </div>
+                <div class="btn" id="videoBtn">
+                    人脸识别登陆
+                </div>
+            </div>
+            <div class="msg">
+                没有账号?
+                <a href="http://localhost:8082/home" target="_blank">注册用户</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/Render.js"></script>
+</body>
+</html>

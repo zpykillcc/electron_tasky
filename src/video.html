@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>window.$ = window.jQuery = require('./js/jquery-3.6.3.min.js') </script>
+    <script src="./js/jquery.webcam.js"></script>
+    <script type="text/javascript" src="../node_modules/animejs/lib/anime.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI识别</title>
+<link type="text/css" href="css/base1.css" rel="stylesheet"  media="screen"/>
+<link type="text/css" href="css/new_1.css" rel="stylesheet"  media="screen"/>
+</head>
+<body style="overflow:hidden">
+<!--代码部分begin-->
+<div class="cbox1" id="close_">
+    <div class="close"></div>
+</div>
+<div class="cbox2" id="min_">
+    <div class="minWind"></div>
+</div>
+<div class="loading"></div>
+<video class="webcam", id="webcam" ></video>
+<canvas id="canvas" class="webcam" width="700" height="600"></canvas>
+<div style="position: absolute; left: 150px; bottom: 60px;">模型选择
+        <select id="model" style="position: relative; left: 10px;  width:60px;">
+        </select>
+        </div>
+<div style="position: absolute; left: 150px; bottom: 20px;">Lora选择
+    <select id="lora" style="position: relative; left: 10px;  width:60px;">
+        <option value="">无</option>
+        <option value="lora:yaeMikoRealistic_yaemikoMixed:1">yaeMikoRealistic_yaemikoMixed</option>
+        <option value="lora:yorBriarSpyFamily_lykonV1:1">yorBriarSpyFamily_lykonV1</option>
+    </select>
+</div>
+<button class="play" id="capture"><span>拍照</span></button>
+<button class="play" id="subbmit"><span>提交</span></button>
+<button class="play" id="refresh"><span>取消</span></button>
+
+
+
+<img src="img/back.png" class="icoback"\>
+<canvas class= "canv" id="projector">Your browser does not support the Canvas element.</canvas><canvas id="projector"  width="100%" height="100%">Your browser does not support the Canvas element.</canvas> 
+
+<div class="imgWrapper">
+    <div class="wrapper"></div>
+    <input type="button" value="使用" id="setAvator" style="width: 50px;  position: relative; top: 555px; left: 200px; -webkit-app-region: no-drag;"/>
+    <input type="button" value="关闭" id="closeAvator" style="width: 50px; position: relative; top: 555px; left:250px; -webkit-app-region: no-drag;"/>
+</div>
+
+
+<script src="js/base1.js"></script>
+<script type="text/javascript" src="js/showPic.js"></script>
+<script type="text/javascript" src="js/Render.js"></script>
+<script type="text/javascript" src="js/window_1.js"></script>
+<script type="text/javascript" src="js/useVideo.js"></script>
+
+
+
+
+<!--代码部分end-->
+</body>
+</html>

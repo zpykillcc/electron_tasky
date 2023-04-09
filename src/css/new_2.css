@@ -1,0 +1,72 @@
+.selecttext {
+	background-image: url('../img/backlist.png');
+	border: solid 1px #000000;
+	position: absolute;
+	width: 300px;
+	height: 500px;
+	padding: 5px;  
+	top: 10%;
+	left: 5%;
+    -webkit-app-region: no-drag;
+}
+
+.gettext {
+    background-image: url('../img/backlist.png');
+	border: solid 1px #000000;
+	position: absolute;
+	width: 400px;
+	height: 500px;
+	padding: 5px;  
+	top: 10%;
+	left: 5%;
+    -webkit-app-region: no-drag;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    z-index: 12;
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1; 
+}
+
+
+#show {
+    position: relative;
+    top:10px;
+    text-align: center;
+    letter-spacing: 0.14rem;
+    font-size: 1rem; 
+    color: #ffffff;
+}
