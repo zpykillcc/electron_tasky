@@ -6,3 +6,9 @@
 
 ajax异步
 
+```
+npm run start
+```
+
+
+
