@@ -179,7 +179,7 @@ $(document).ready(function(){
     $(".weltext").text("欢迎! "+obj.data.uname);
     $("#set").click(function(e){
         e.preventDefault()
-        var href = vueUrl+'change'
+        var href = vueUrl+'#/change'
         shell.openExternal(href)
     });
     $("#qcontainer_1").click(function(){  
